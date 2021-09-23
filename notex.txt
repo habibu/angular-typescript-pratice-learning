@@ -1,30 +1,21 @@
-############### 2021.08.25 By Habibu Abdullahi ##########
-->	Troubleshhoting node.js installation in macOS
-	100% working solution
 
-1) rm -rf /usr/local/lib/node_modules
-
-2)brew uninstall node
-
-3)echo prefix=~/.npm-packages >> ~/.npmrc
-
-4)brew install node
-
-5) npm install -g @angular/cli
-
-Finally and most importantly
-
-6) export PATH="$HOME/.npm-packages/bin:$PATH"
-
-Also if any editor still shown err than write
-
-	Source: https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
-
-############# 2021.08.27 ############
-Trouble shoot: Typescript: TS7006: Parameter 'xxx' implicitly has an 'any' type
-		set noImplcitAny:false in the tsconfig.json file
-		Source: https://stackoverflow.com/questions/43064221/typescript-ts7006-parameter-xxx-implicitly-has-an-any-type
-Troubleshoot css:
-		use ng new projectName --style=css
-		source: https://stackoverflow.com/questions/49832167/unable-to-get-scss-instead-of-css-while-generating-new-angular-components
-
+######### 2021.09.16 ###### 1443.02.9 #######
+Example that are not working:
+        Practice 7:
+        1.      Example1 Bootstrap not working
+        2.      Example2 Material Design not working
+        Practice 8:
+        1.      Example1 router not working
+        2.      Example3 router with queryParams not working
+        Practice 9:
+        1.      Example1 Observable not working
+        2.      Example2 also not working
+        3.      Example3 also not working
+        Practice 10:
+        1.      Example2 not working possibily wrong API
+        2.      Example3 the same problem.
+        3.      Example5 not working .map() function trouble
+        4.      Example6 not working with error "Property doesnt exist on "never" "
+        Practice 11:
+        1.      Example2 not working
+        2.      Example3 not working ERROR Error: NG0201: No provider for TemplateRef found
