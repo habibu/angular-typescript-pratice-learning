@@ -1,0 +1,30 @@
+############### 2021.08.25 By Habibu Abdullahi ##########
+->	Troubleshhoting node.js installation in macOS
+	100% working solution
+
+1) rm -rf /usr/local/lib/node_modules
+
+2)brew uninstall node
+
+3)echo prefix=~/.npm-packages >> ~/.npmrc
+
+4)brew install node
+
+5) npm install -g @angular/cli
+
+Finally and most importantly
+
+6) export PATH="$HOME/.npm-packages/bin:$PATH"
+
+Also if any editor still shown err than write
+
+	Source: https://stackoverflow.com/questions/46623571/angular-ng-command-not-found
+
+############# 2021.08.27 ############
+Trouble shoot: Typescript: TS7006: Parameter 'xxx' implicitly has an 'any' type
+		set noImplcitAny:false in the tsconfig.json file
+		Source: https://stackoverflow.com/questions/43064221/typescript-ts7006-parameter-xxx-implicitly-has-an-any-type
+Troubleshoot css:
+		use ng new projectName --style=css
+		source: https://stackoverflow.com/questions/49832167/unable-to-get-scss-instead-of-css-while-generating-new-angular-components
+
